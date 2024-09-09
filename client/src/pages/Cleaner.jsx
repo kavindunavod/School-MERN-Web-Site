@@ -24,6 +24,7 @@ const CleanerPage = () => {
         try {
             const response = await axios.get('http://localhost:7000/Cleaner');
             setCleaner(response.data);
+            console.log('successfully get the data');
         } catch (error) {
             console.error('Error fetching Cleaners:', error);
         }
