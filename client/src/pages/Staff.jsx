@@ -4,6 +4,7 @@ import axios from 'axios';
 import "../styling/Staff.css";
 import Dashboard from './Dashboard';
 
+//ignore this thing
 const StaffPage = () => {
     const [staff, setStaffMember] = useState([]);
     const [newStaffMember, setNewStaffMember] = useState({
@@ -74,6 +75,7 @@ const StaffPage = () => {
             fetchStaff();
         } catch (error) {
             console.error('Error updating staff Member:', error);
+            console.log('error occur');
         }
     };
 
