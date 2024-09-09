@@ -75,6 +75,7 @@ const StudentPage = () => {
             setEditMode(false);
             setSelectedStudent(null);
             fetchStudents();
+            console.log("successfully Updated");
         } catch (error) {
             console.error('Error updating student:', error);
         }
