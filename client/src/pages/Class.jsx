@@ -40,6 +40,7 @@ const ClassPage = () => {
         });
     };
 
+    //when user click submit button
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log('New Class Data:', newClass);
